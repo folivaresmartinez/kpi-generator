@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    active: test
+  kafka:
+    security:
+      protocol: "SSL"
+    bootstrap-servers: hubcibiccng01.nngg.corp:9093
+    ssl:
+      trust-store-location: classpath:client-certs/kafka.oasis.truststore.jks
+      trust-store-password: qfI+OyAtLaaN
+      key-store-location: classpath:client-certs/kafka.oasis.keystore.jks
+      key-store-password: qfI+OyAtLaaN
+aws-s3:
+  properties:
+    bucketName: scib-pre-ln-oasis-istm
+    endpoint: https://s3.boaw.cloudstorage.corp
+    accessKey: F0A697VODX5OP1RX6AJ5
+    secretKey: F77yYmhH/hUf0PveH474fJ4gcaaZwVIZjeEYCbBU
+elasticsearch:
+  properties:
+    server: 2157f1610f36422098c7228b70f6d825.ece01.scib.pre.corp
+    port: 9243
+    username: oasis_admin
+    password: Yo9x+Y=v^@+Z0RtOnyFc
